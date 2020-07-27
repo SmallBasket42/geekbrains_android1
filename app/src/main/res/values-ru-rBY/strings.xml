@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Your Weather</string>
+    <string name="app_is_not_ready_yet">Пока не готово</string>
+    <string name="button_text">Кнопочка</string>
+    <string name="switch_text">Свитчер</string>
+    <string name="enter_text">Привет,Батько!</string>
+</resources>
