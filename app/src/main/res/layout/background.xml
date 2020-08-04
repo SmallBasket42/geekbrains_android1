@@ -5,18 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    tools:visibility="visible">
+    tools:visibility="visible"
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/pic1"
-        tools:visibility="visible"
+        android:contentDescription="@string/background"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pic1"
-        tools:srcCompact="@drawable/pic1" />
+        app:srcCompat="@drawable/background"
+        tools:srcCompact="@drawable/background"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>

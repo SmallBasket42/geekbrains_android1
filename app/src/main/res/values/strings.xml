@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Your Weather</string>
     <string name="app_is_not_ready_yet" translatable="false">App is not ready yet</string>
-    <string name="button_text">OK</string>
+    <string name="ok_button" translatable="false">OK</string>
     <string name="enter_text">City name</string>
     <string name="image_view" translatable="false">TODO</string>
     <string name="wind_speed">Wind speed</string>
     <string name="humidity">Humidity</string>
     <string name="textview_weather">Weather</string>
-    <string name="pic1" translatable="false">picture</string>
+    <string name="background" translatable="false">background</string>
     <string name="text_temperature">Temperature:  </string>
     <string name="view_temperature" translatable="false">0</string>
     <string name="view_windspeed" translatable="false">0</string>
