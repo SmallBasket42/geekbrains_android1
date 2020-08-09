@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="checkbox_text">CheckBox</string>
-    <string name="checkbox_text2">CheckBox</string>
-    <string name="text">Name</string>
     <string name="textview_weather">TextView</string>
     <string name="text_temperature">TextView</string>
     <string name="view_temperature">TextView</string>
+    <string name="city_name">TextView</string>
+    <string name="info_button">Button</string>
+    <string name="wind_speed_textView">TextView</string>
+    <string name="humidity_textView">TextView</string>
 </resources>

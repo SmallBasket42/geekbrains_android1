@@ -2,24 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:visibility="visible"
-    tools:visibility="visible"
-    android:background="@drawable/background">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/background"
-        android:src="@drawable/background"
-        android:scaleType="fitXY"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background"
-        tools:srcCompact="@drawable/background"
-        tools:visibility="visible" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    tools:visibility="visible" />

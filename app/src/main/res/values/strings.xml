@@ -1,15 +1,19 @@
 <resources>
-    <string name="app_name">Your Weather</string>
+    <string name="app_name" translatable="false">Your Weather</string>
     <string name="app_is_not_ready_yet" translatable="false">App is not ready yet</string>
     <string name="ok_button" translatable="false">OK</string>
-    <string name="enter_text">City name</string>
+    <string name="enter_text">Enter city name</string>
     <string name="image_view" translatable="false">TODO</string>
     <string name="wind_speed">Wind speed</string>
     <string name="humidity">Humidity</string>
     <string name="textview_weather">Weather</string>
     <string name="background" translatable="false">background</string>
     <string name="text_temperature">Temperature:  </string>
-    <string name="view_temperature" translatable="false">0</string>
-    <string name="view_windspeed" translatable="false">0</string>
-    <string name="view_humidity" translatable="false" >0</string>
+    <string name="view_temperature" translatable="false">+28</string>
+    <string name="view_windspeed" translatable="false">5</string>
+    <string name="view_humidity" translatable="false">30</string>
+    <string name="city_name">City name</string>
+    <string name="info_button">More</string>
+    <string name="wind_speed_textView">Wind speed m/s</string>
+    <string name="humidity_textView">Humidity %</string>
 </resources>

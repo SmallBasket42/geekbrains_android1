@@ -8,5 +8,9 @@
     <string name="humidity">Влажностье</string>
     <string name="textview_weather">Погода</string>
     <string name="text_temperature">Температура</string>
-    <string name="view_temperature">0</string>
+    <string name="view_temperature">+28</string>
+    <string name="city_name">Название города</string>
+    <string name="info_button">Инфо</string>
+    <string name="wind_speed_textView">Скорость ветра м/с</string>
+    <string name="humidity_textView">Влажность %</string>
 </resources>
