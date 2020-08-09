@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FF5722</color>
-    <color name="colorPrimaryDark">#4CAF50</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#2196F3</color>
     <color name="ok_button">#FFFFFF</color>
     <color name="enter_text">#FFFFFF</color>
@@ -11,4 +11,8 @@
     <color name="wind_speed">#FFFFFF</color>
     <color name="view_windspeed">#FF0000</color>
     <color name="humidity">#FFFFFF</color>
+    <color name="city_name">#000000</color>
+    <color name="info_button">#000000</color>
+    <color name="wind_speed_textView">#000000</color>
+    <color name="humidity_textView">#000000</color>
 </resources>

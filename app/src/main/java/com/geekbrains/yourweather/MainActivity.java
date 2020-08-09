@@ -2,112 +2,51 @@ package com.geekbrains.yourweather;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
-import java.util.Random;
+
+
 
 
 public class MainActivity extends AppCompatActivity {
-    private TextView temperatureView;
+    final static String dataKey = "dataKey";
     private Button okBtn;
+    private EditText EditCityName;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViews();
-        setOnClickBehaviourBtn();
-        String instanceState;
-        if (savedInstanceState == null){
-            instanceState = "Добро пожаловать!";
-        }
-        else{
-            instanceState = "Вы вернулись!";
-        }
-        Toast.makeText(getApplicationContext(), instanceState + " ", Toast.LENGTH_SHORT).show();
+        okBtnClickedToForecastAct();
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Toast.makeText(getApplicationContext(), "Начали", Toast.LENGTH_SHORT).show();
-        Log.d("onStart", "App Started");
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle saveInstanceState){
-        super.onRestoreInstanceState(saveInstanceState);
-        Toast.makeText(getApplicationContext(), "Повторный запуск!!", Toast.LENGTH_SHORT).show();
-        Log.d("onRestoreInstanceStat", "Instance State Restored");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Toast.makeText(getApplicationContext(), "Вы вернулись", Toast.LENGTH_SHORT).show();
-        Log.d("onResume", "Resumed");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Toast.makeText(getApplicationContext(), "Пауза", Toast.LENGTH_SHORT).show();
-        Log.d("onPause", "Paused");
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle saveInstanceState){
-        super.onSaveInstanceState(saveInstanceState);
-        Toast.makeText(getApplicationContext(), "Сохраняем", Toast.LENGTH_SHORT).show();
-        Log.d("onSaveInstanceState", "Instance State Saved");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Toast.makeText(getApplicationContext(), "Стоп", Toast.LENGTH_SHORT).show();
-        Log.d("onStop", "Stopped");
-    }
-
-        @Override
-        protected void onRestart() {
-            super.onRestart();
-            Toast.makeText(getApplicationContext(), "Перезапуск", Toast.LENGTH_SHORT).show();
-            Log.d("onRestart", "Restarted");
-        }
-
-        @Override
-        protected void onDestroy() {
-            super.onDestroy();
-            Toast.makeText(getApplicationContext(), "Конец", Toast.LENGTH_SHORT).show();
-            Log.d("onDestroy", "Destroyed");
-        }
-
-
-
-    private void findViews(){
-        temperatureView = findViewById(R.id.view_temperature);
+    private void findViews() {
         okBtn = findViewById(R.id.ok_button);
+        EditCityName = findViewById(R.id.edit_city_name);
+
     }
-    private void setOnClickBehaviourBtn() {
-        okBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                    Toast.makeText(getApplicationContext(), "Вангую", Toast.LENGTH_SHORT).show();
-                    Random randInt = new Random();
-                    int randomTemp = randInt.nextInt(60);
-                    String getTemp = Integer.toString(randomTemp);
-                    int getTempEquals = !getTemp.equals(" ")?Integer.parseInt(getTemp) : 0;
-                    int parseTemp = Integer.parseInt(getTemp);
-                    String newRandom = String.valueOf(++randomTemp);
-                    temperatureView.setText(newRandom);
+
+            private void okBtnClickedToForecastAct () {
+                okBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, weatherForecast.class);
+                        intent.putExtra("dataKey", EditCityName.getText().toString());
+                        startActivity(intent);
+                        Toast.makeText(getApplicationContext(), "Вангую", Toast.LENGTH_SHORT).show();
+                    }
+
+                });
             }
 
-        });
-    }
+        }
 
-}
+
+
+

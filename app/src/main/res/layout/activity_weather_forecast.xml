@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weatherForecast"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="319dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="164dp"
+        android:gravity="center"
+        android:text="@string/city_name"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_windspeed"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+        android:hint="@string/view_windspeed"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/view_humidity"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center"
+        android:hint="@string/view_humidity"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <TextView
+        android:id="@+id/view_temperature"
+        android:layout_width="106dp"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:hint="@string/view_temperature"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <Button
+        android:id="@+id/info_button"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:text="@string/info_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <TextView
+        android:id="@+id/wind_speed_textView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:gravity="left|center"
+        android:text="@string/wind_speed_textView"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/humidity_textView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:gravity="left|center"
+        android:text="@string/humidity_textView"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
