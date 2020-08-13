@@ -1,97 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:visibility="visible"
-    tools:context=".MainActivity"
-    android:background="@drawable/background">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/ok_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:hint="@string/ok_button"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment android:name="com.geekbrains.yourweather.fragments.CitiesFragment"
+            android:id="@+id/cities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
 
-    <EditText
-        android:id="@+id/edit_city_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/enter_text"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        android:textSize="23sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ok_button"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475"
-        tools:visibility="visible" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="117dp"
-        android:layout_height="45dp"
-        android:gravity="center"
-        android:hint="@string/textview_weather"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
-
-    <CheckBox
-        android:id="@+id/wind_speed"
-        android:layout_width="232dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="16dp"
-        android:buttonTint="#00BCD4"
-        android:drawingCacheQuality="auto"
-        android:gravity="left|center"
-        android:hint="@string/wind_speed"
-        android:textAlignment="gravity"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        android:textColorLink="@color/colorAccent"
-        android:textDirection="ltr"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
-
-    <CheckBox
-        android:id="@+id/humidity"
-        android:layout_width="232dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="16dp"
-        android:buttonTint="#00BCD4"
-        android:gravity="left|center"
-        android:hint="@string/humidity"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        android:textColorLink="@color/colorAccent"
-        android:textDirection="ltr"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wind_speed"
-        app:layout_constraintVertical_bias="0.0" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
 
