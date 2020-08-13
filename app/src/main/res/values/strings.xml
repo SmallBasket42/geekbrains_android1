@@ -16,4 +16,5 @@
     <string name="info_button">More</string>
     <string name="wind_speed_textView">Wind speed m/s</string>
     <string name="humidity_textView">Humidity %</string>
+    <string name="empty_list" translatable="false">Empty list</string>
 </resources>
