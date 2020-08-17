@@ -1,16 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Your Weather</string>
-    <string name="app_is_not_ready_yet">Еще не готово</string>
-    <string name="ok_button">ОК</string>
-    <string name="enter_text">Введите город</string>
-    <string name="wind_speed">Скорость ветра</string>
-    <string name="humidity">Влажность</string>
-    <string name="textview_weather">Погода</string>
-    <string name="text_temperature">Температура</string>
-    <string name="view_temperature">+28</string>
-    <string name="city_name">Название города</string>
-    <string name="info_button">Инфо</string>
-    <string name="wind_speed_textView">Скорость ветра м/с</string>
-    <string name="humidity_textView">Влажность %</string>
+    <string name="app_name">Ваша Погода</string>
+    <string name="little_cloudy">Малооблачно</string>
+    <string name="night">Ночь</string>
+    <string name="plus_16">+16°</string>
+    <string name="city">Город</string>
+    <string name="choose_your_city">Пожалуйста, введите название города.</string>
+    <string name="enter_the_name_of_the_city">Ваш город</string>
+    <string name="ok">Ok</string>
+    <string name="settings">Настройки</string>
+    <string name="set_on_night_mode">Включить ночной режим</string>
+    <string name="show_atmosphere_pressure">Показывать атмосферное давление</string>
+    <string name="windInfo">%1$d м/с, С</string>
+    <string name="or_choose_from_list">Или выберете из списка.</string>
+    <string name="pressureInfo">%1$d мм рт.ст.</string>
+    <string name="currTime">11:33</string>
+    <string name="show_temperature_feels_like">Показать темературу по ощущению</string>
+    <string name="feels_like_temp">Ощущается: + %1$d °</string>
+    <string name="settings_header">Settings</string>
+    <string name="night_mode">Ночной режим</string>
+    <string name="atmosphere_pressure">Показ атмосферного давления</string>
+    <string-array name="cities">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Омск</item>
+        <item>Челябинск</item>
+        <item>Сочи</item>
+        <item>Новосибирск</item>
+        <item>Краснодар</item>
+        <item>Владивосток</item>
+        <item>Ростов-на-Дону</item>
+        <item>Саратов</item>
+    </string-array>
+    <string-array name="days">
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+        <item>Вс</item>
+    </string-array>
+    <string-array name="daysTemp">
+        <item>+0</item>
+        <item>+0</item>
+        <item>+0</item>
+        <item>+0</item>
+        <item>+0</item>
+        <item>+0</item>
+        <item>+0</item>
+    </string-array>
+    <string-array name="weatherState">
+        <item>Дождь</item>
+        <item>Ясно</item>
+        <item>Переменная облачность</item>
+        <item>Пасмурно</item>
+        <item>Облачность с прояснениями</item>
+        <item>Гроза</item>
+    </string-array>
+    <string-array name="iconsId">
+        <item>cloudy_rainy_not_windy</item>
+        <item>sunny_not_cloudy</item>
+        <item>cloudy_icon</item>
+        <item>cloudy_icon</item>
+        <item>little_cloudy_sunny</item>
+        <item>storm_cloudy</item>
+    </string-array>
 </resources>

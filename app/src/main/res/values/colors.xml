@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF5722</color>
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#2196F3</color>
-    <color name="ok_button">#FFFFFF</color>
-    <color name="enter_text">#FFFFFF</color>
-    <color name="textview_weather">#FFFFFF</color>
-    <color name="view_temperature">#FF0000</color>
-    <color name="view_humidity">#FF0000</color>
-    <color name="wind_speed">#FFFFFF</color>
-    <color name="view_windspeed">#FF0000</color>
-    <color name="humidity">#FFFFFF</color>
-    <color name="city_name">#000000</color>
-    <color name="info_button">#000000</color>
-    <color name="wind_speed_textView">#000000</color>
-    <color name="humidity_textView">#000000</color>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#3602AC</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="day">#3594E1</color>
+    <color name="no_color">#00000000</color>
+    <color name="night">#000000</color>
+    <color name="dark_grey">#424242</color>
 </resources>
