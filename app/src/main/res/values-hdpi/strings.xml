@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_header">Settings</string>
+    <string name="night_mode">Set on night mode</string>
+    <string name="atmosphere_pressure">Show atmosphere pressure</string>
+</resources>
