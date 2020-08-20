@@ -35,6 +35,7 @@ public class WeekWeatherRecyclerDataAdapter extends RecyclerView.Adapter<WeekWea
         String day = days.get(position);
         String dayTemp = daysTemp.get(position);
         Integer weatherIconId = weatherIcons.get(position);
+
         holder.setTextToDayTextView(day);
         holder.setTextToDayTemperatureTextView(dayTemp);
         holder.setImageToWeatherIconImageView(weatherIconId);
@@ -65,12 +66,9 @@ public class WeekWeatherRecyclerDataAdapter extends RecyclerView.Adapter<WeekWea
         void setImageToWeatherIconImageView(int resourceId) { weatherIconImageView.setImageResource(resourceId);}
 
         void setOnClickForItem(final String day) {
-            weatherIconImageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if(onItemClickCallback != null) {
-                        onItemClickCallback.onItemClicked(day);
-                    }
+            weatherIconImageView.setOnClickListener(view -> {
+                if(onItemClickCallback != null) {
+                    onItemClickCallback.onItemClicked(day);
                 }
             });
         }

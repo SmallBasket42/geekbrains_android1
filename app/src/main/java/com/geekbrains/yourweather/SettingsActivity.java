@@ -3,7 +3,6 @@ package com.geekbrains.yourweather;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
@@ -13,11 +12,15 @@ public class SettingsActivity extends AppCompatActivity {
     private SwitchCompat nightModeSwitch;
     private SwitchCompat pressureSwitch;
     private SwitchCompat feelsLikeSwitch;
-    final static String settingsDataKey = "settingsDataKey";
     SettingsActivityPresenter settingsActivityPresenter = SettingsActivityPresenter.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (settingsActivityPresenter.getIsNightModeSwitchOn()) {
+            setTheme(R.style.AppThemeDark);
+        } else {
+            setTheme(R.style.AppTheme);
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
         initViews();
@@ -35,30 +38,18 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void setOnNightModeSwitchClickListener(){
-        nightModeSwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                settingsActivityPresenter.changeNightModeSwitchStatus();
-            }
+        nightModeSwitch.setOnClickListener(view -> {
+            settingsActivityPresenter.changeNightModeSwitchStatus();
+            recreate();
         });
     }
 
     private void setOnPressureSwitchClickListener(){
-        pressureSwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                settingsActivityPresenter.changePressureSwitchStatus();
-            }
-        });
+        pressureSwitch.setOnClickListener(view -> settingsActivityPresenter.changePressureSwitchStatus());
     }
 
     private void setOnFeelsLikeSwitchClickListener(){
-        feelsLikeSwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                settingsActivityPresenter.changeFeelsLikeSwitchStatus();
-            }
-        });
+        feelsLikeSwitch.setOnClickListener(view -> settingsActivityPresenter.changeFeelsLikeSwitchStatus());
     }
 
     private void showBackBtn() {
