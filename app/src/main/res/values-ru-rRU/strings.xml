@@ -17,9 +17,16 @@
     <string name="currTime">11:33</string>
     <string name="show_temperature_feels_like">Показать темературу по ощущению</string>
     <string name="feels_like_temp">Ощущается: + %1$d °</string>
-    <string name="settings_header">Settings</string>
-    <string name="night_mode">Ночной режим</string>
-    <string name="atmosphere_pressure">Показ атмосферного давления</string>
+    <string name="HintTextInputEditText">Введите название города.</string>
+    <string name="setOnBtnOkEnterCityToast">Некорректное имя города</string>
+    <string name="toDeleteCity">Чтобы удалить город, нажмите</string>
+    <string name="delete">Удалить</string>
+    <string name="cityDeleted">Город удален</string>
+    <string name="pleaseChooseCityFirst">Пожалуйста, сначала выберите город</string>
+    <string name="about">О приложении</string>
+    <string name="appName">Ваша Погода</string>
+    <string name="version">Версия 1.0.1.1.0</string>
+    <string name="feedback">Напишите нам</string>
     <string-array name="cities">
         <item>Москва</item>
         <item>Санкт-Петербург</item>

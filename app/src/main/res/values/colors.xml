@@ -5,6 +5,6 @@
     <color name="colorAccent">#FF5722</color>
     <color name="day">#3594E1</color>
     <color name="no_color">#00000000</color>
-    <color name="night">#000000</color>
-    <color name="dark_grey">#424242</color>
+    <color name="night">#4A4444</color>
+    <color name="dark_grey">#132FCC</color>
 </resources>
